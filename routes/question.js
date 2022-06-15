@@ -64,7 +64,7 @@ questionRoute.get('/details/:id', auth, async (req, res) => {
  });
 
  //comment route
-questionRoute.post('/answer', auth, async (req, res) => {
+questionRoute.post('/answer', async (req, res) => {
     const { id, answer ,author} = req.body;
     // console.log(req.body);
     try {
